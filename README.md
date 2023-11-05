@@ -5,6 +5,13 @@ day a new door may be opened.
 
 ![Sample screen](screen1.png)
 
+## Demo
+
+Have a look at the demo app at https://advent-calendar-green.vercel.app/?day=2.
+Note that it has `VITE_OVERRIDABLE_DAY=true` set in order to allow the query
+param `day=`. In "normal" production mode only the actual days 1-24 of December
+are considered.
+
 ## How to use
 
 1. Clone the repository
