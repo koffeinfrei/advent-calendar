@@ -27,6 +27,8 @@ npm run dev -- --open
 
 In development mode the url param `day=` may be set to mock the current day.
 This makes it easier to test the images ahead of time.
+To enable this in production as well the environment variable
+`VITE_OVERRIDABLE_DAY=true` may be set.
 
 ## Building
 

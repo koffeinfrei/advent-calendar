@@ -12,19 +12,25 @@
 </div>
 
 <script>
-  import { dev } from '$app/environment';
-
   export let number;
   const src = `/${('00' + number).slice(-2)}.png`;
 
-  // allow the query param `?day=3` in development mode to mock the day
+  // allow the query param `?day=3` to mock the day when the `VITE_CURRENT_DAY`
+  // env variable is set
   let today;
   const dayFromQueryParam = new URLSearchParams(location.search).get('day');
-  if (dev && dayFromQueryParam) {
+  if (import.meta.env.VITE_OVERRIDABLE_DAY && dayFromQueryParam) {
     today = parseInt(dayFromQueryParam);
   }
   else {
-    today = (new Date()).getDate();
+    const date = new Date();
+    // only allow december
+    if (date.getMonth() + 1 === 12) {
+      today = date.getDate();
+    }
+    else {
+      today = 0;
+    }
   }
 
   const flippable = number <= today;
