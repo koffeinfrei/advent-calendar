@@ -1,3 +1,16 @@
+<div class="door" on:click={handleClick}>
+  <div class="door-inner" class:flipped="{flipped}">
+    <div class="door-front" class:flippable>
+      <span>
+        {number}
+      </span>
+    </div>
+    <div class="door-back">
+      <img {src} />
+    </div>
+  </div>
+</div>
+
 <script>
   import { dev } from '$app/environment';
 
@@ -42,19 +55,6 @@
     }
   }
 </script>
-
-<div class="door" on:click={handleClick}>
-  <div class="door-inner" class:flipped="{flipped}">
-    <div class="door-front" class:flippable>
-      <span>
-        {number}
-      </span>
-    </div>
-    <div class="door-back">
-      <img {src} />
-    </div>
-  </div>
-</div>
 
 <style>
 .door {
