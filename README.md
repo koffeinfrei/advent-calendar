@@ -15,7 +15,7 @@ are considered.
 ## How to use
 
 1. Clone the repository
-2. Replace the images `static/{01..24}.png`
+2. Replace the images `lib/images/{01..24}.png`
 3. Optional: Overwrite the title by either
    1. setting an environment variable `VITE_APP_TITLE`
    2. setting the value in `.env.*` (see [Vite env
