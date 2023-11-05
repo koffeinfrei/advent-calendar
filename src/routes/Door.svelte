@@ -14,8 +14,10 @@
     today = (new Date()).getDate();
   }
 
+  const flippable = number <= today;
+
   let flipped;
-  if (number <= today) {
+  if (flippable) {
     flipped = getValues()[number - 1];
   }
 
@@ -35,7 +37,7 @@
   }
 
   function handleClick(event) {
-    if (number <= today) {
+    if (flippable) {
       flip();
     }
   }
@@ -43,7 +45,7 @@
 
 <div class="door" on:click={handleClick}>
   <div class="door-inner" class:flipped="{flipped}">
-    <div class="door-front">
+    <div class="door-front" class:flippable>
       <span>
         {number}
       </span>
@@ -93,7 +95,10 @@
 /* Style the front side (fallback if image is missing) */
 .door-front {
   background: rgba(211, 47, 47, 0.91) none repeat scroll 0% 0%;
-  cursor: pointer;
+
+  &.flippable {
+    cursor: pointer;
+  }
 }
 
 /* Style the back side */
