@@ -1,15 +1,6 @@
-<script>
-  // https://codepen.io/alphardex/pen/dyPorwJ
-
-  function* generator() {
-    for (var i = 0; i < 200; i++) {
-      yield;
-    }
-  }
-</script>
-
+<!-- https://codepen.io/alphardex/pen/dyPorwJ -->
 <div class="snow">
-  {#each [...generator()] as item}
+  {#each { length: 200 } as _}
     <div class="snow-flake"></div>
   {/each}
 </div>
