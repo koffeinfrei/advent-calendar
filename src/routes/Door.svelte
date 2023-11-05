@@ -59,7 +59,7 @@
   background: transparent;
   width: 200px;
   height: 200px;
-  margin: 0.5px;
+  margin: 1.5px;
 
   perspective: 1000px;
 }

@@ -9,24 +9,18 @@
   <Door number=4 />
   <Door number=5 />
   <Door number=6 />
-</div>
-<div class="calendar">
   <Door number=7 />
   <Door number=8 />
   <Door number=9 />
   <Door number=10 />
   <Door number=11 />
   <Door number=12 />
-</div>
-<div class="calendar">
   <Door number=13 />
   <Door number=14 />
   <Door number=15 />
   <Door number=16 />
   <Door number=17 />
   <Door number=18 />
-</div>
-<div class="calendar">
   <Door number=19 />
   <Door number=20 />
   <Door number=21 />
@@ -38,6 +32,9 @@
 <style>
   .calendar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    margin: auto;
+    max-width: 1280px;
   }
 </style>
