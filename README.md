@@ -53,3 +53,8 @@ You can preview the production build with `npm run preview`.
 
 To deploy your app, you may need to install an
 [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+## Credits
+
+The beautiful snow effect is made by [alphardex](https://codepen.io/alphardex).
+Published at https://codepen.io/alphardex/pen/dyPorwJ.
