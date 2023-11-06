@@ -5,6 +5,10 @@ day a new door may be opened.
 
 ![Sample screen](screen1.png)
 
+> I wanted to surprise someone with a nice web based advent calendar.<br/>
+> This is exactly what I was looking for.<br>
+> -- myself
+
 ## Demo
 
 Have a look at the demo app at https://advent-calendar-green.vercel.app/?day=2.
