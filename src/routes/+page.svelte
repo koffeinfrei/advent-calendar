@@ -5,6 +5,10 @@
 
   <Calendar />
 </main>
+<footer>
+  Made with ☕️ by <a href="https://www.koffeinfrei.org" target="_blank">Koffeinfrei</a>.
+  This is free and open source software. Source code on <a href="https://github.com/koffeinfrei/advent-calendar" target="_blank">GitHub</a>
+</footer>
 
 <svelte:head>
   <title>{import.meta.env.VITE_APP_TITLE}</title>
@@ -20,7 +24,19 @@
     text-align: center;
     padding: 1em;
     max-width: 240px;
-    margin: 0 auto;
+    margin: 0 auto 4em auto;
+  }
+
+  @media (min-width: 640px) {
+    main {
+      max-width: none;
+    }
+  }
+
+  footer {
+    font-size: 0.8em;
+    text-align: center;
+    margin-bottom: 1em;
   }
 
   h1 {
@@ -28,11 +44,5 @@
     text-transform: uppercase;
     font-size: 4em;
     font-weight: 100;
-  }
-
-  @media (min-width: 640px) {
-    main {
-      max-width: none;
-    }
   }
 </style>
