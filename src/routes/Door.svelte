@@ -114,12 +114,13 @@
 }
 
 .flipped {
-  background: red;
   color: blue;
   transform: rotateY(180deg);
 }
+
 .door-front, .door-back {
   display: flex;
+  overflow: hidden;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -130,7 +131,7 @@
   backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
+/* Style the front side */
 .door-front {
   background: rgba(211, 47, 47, 0.91) none repeat scroll 0% 0%;
 
