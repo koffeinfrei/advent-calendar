@@ -20,12 +20,16 @@ are considered.
 
 1. Clone the repository
 2. Replace the images `lib/images/{01..24}.png`
-3. Optional: Overwrite the title by either
-   1. setting an environment variable `VITE_APP_TITLE`
-   2. setting the value in `.env.*` (see [Vite env
+3. Set the title by either
+   1. Setting an environment variable `VITE_APP_TITLE=Advent Calendar`
+   2. Setting the value in `.env`(see [Vite env
       variables](https://vitejs.dev/guide/env-and-mode.html#env-files) for
-      details)
-4. [Build and deploy](#building)
+      details), e.g. like so:
+      ```sh
+      $ echo "VITE_APP_TITLE=Advent Calendar" > .env
+      ```
+4. For development: Set `VITE_OVERRIDABLE_DAY=true`
+5. [Build and deploy](#building)
 
 ## Development
 
